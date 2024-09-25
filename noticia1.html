@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Notícias Responsiva</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #00264d;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .section-content {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+      color: #00264d;
+    }
+
+    .news-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .news-item {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      width: 300px;
+      text-align: left;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .news-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .news-content h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #00264d;
+    }
+
+    .news-content p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .btn-leia-mais {
+      background-color: #00264d;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .btn-leia-mais:hover {
+      background-color: #00bfff;
+    }
+
+    footer {
+      background-color: #00264d;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .news-item {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>Notícias</h1>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Seção de notícias -->
+  <section id="noticias" class="section-content">
+    <div class="news-list">
+      <div class="news-item">
+        <img src="noticias/notícia 1.jpg" alt="Notícia 1">
+        <div class="news-content">
+          <h3>Peça do Menino Jesus 2024</h3>
+          <p> 
+            O espetáculo foi apresentado direto do adro da Matriz do Menino Jesus.
+            
+            Artistas da juventude missionária e do encontro de jovens católicos (ejoc) contam a história da devoção. 
+            
+            A direção é de Adriele Dutra, com texto também de Adriele Dutra. A produção composta por Eduarda Leite, Carlos Filho, João Paulo e Ruan Silva.
+            
+            Equipe Técnica:
+            Iluminação e cenografia: Jorge Paiva.
+            Audio: Romenig Nicolas.
+            Figurino: Adriele Dutra e Eduarda Leite.
+            Maquiagem: Any Beatriz, Jordênia Alves, Ana Clara e Arianne Vitoria.
+            Coreografia: Ruan Silva.
+            Gravação de vozes: Júnior Linhares
+            Fotos: Igor Melo imagens que falam
+            Apoio: acervo diocese de Santa Luzia
+            
+            Venha conhecer a história da devoção do Menino Jesus! ♥️</p>
+        </div>
+    </div>
+  </section>
+</body>
+</html>
